@@ -10,15 +10,21 @@ setup = function() {
   textSize(30);
 
   while(crossiantX < 225){
-    text("🍫", crossiantX+3, 90-4);
+    text("🍫", crossiantX+3, 90-7);
     text("🍫", crossiantX, 90);
     crossiantX += 30;
   }
 
     while(frX < 225){
-    text("🍟", frX+3, 139-10);
-    text("🍟", frX, 140);
+    text("🍟", frX+3, 139-13);
+    text("🍟", frX, 137);
     frX += 30;
+  }
+  for (var i=120; i<220 ; i+=30){
+    text('🥤', i, 187-13);
+    text('🥤', i, 187);
+    
+  
   }
 
 
