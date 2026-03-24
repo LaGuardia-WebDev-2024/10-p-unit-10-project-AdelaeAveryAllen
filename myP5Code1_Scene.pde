@@ -41,26 +41,36 @@ for (var i=120; i<220 ; i+=30){
   
   }
 
+  fill(0,0,0);
+rect(260,250,44,50);
 
-
-
-
-
-
-
-  textSize(15);
-  text(bakeryLabels[0], 70, 105);
-  text(bakeryLabels[1], 70, 185);
 }
 
 draw = function(){   
-fill (0,0,0);
-rect (100,100,100,100);
-text ("help", 67, 67);
+
 
 }
 
+var vOptions = ["🍟","🍫", "🥤", "🍦", "☕"];
 
 mouseClicked = function(){
+
+fill(0,0,0);
+rect(260,250,44,50);
+
+var randOption = round(random(1, 5));
+
+
+if(randOption == 1){text(vOptions[0], 263, 283);}
+
+if(randOption == 2){text(vOptions[1], 270, 283);}
+
+if(randOption == 3){text(vOptions[2], 267, 283);}
+
+if(randOption == 4){text(vOptions[3], 270, 283);}
+
+if(randOption == 5){text(vOptions[4], 262, 283);}
+
+
 
 }
